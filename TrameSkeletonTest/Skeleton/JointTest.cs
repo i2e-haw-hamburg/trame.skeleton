@@ -21,7 +21,6 @@ namespace TrameUnitTest
             var neck = root.FindChild(JointType.NECK);
 
             Assert.Equal(JointType.NECK, neck.JointType);
-            Assert.Equal(3, neck.GetChildren().Count);
             // with simple find, only the first generation will be searched - result should be an unspecified element
             var head = root.FindChild(JointType.HEAD);
             Assert.Equal(JointType.UNSPECIFIED, head.JointType);
@@ -29,7 +28,6 @@ namespace TrameUnitTest
             // search over more then one step with find
             head = neck.FindChild(JointType.HEAD);
             Assert.Equal(JointType.HEAD, head.JointType);
-            Assert.Equal(0, head.GetChildren().Count);
             Assert.Equal(true, head.Valid);
         }
 
@@ -38,21 +36,13 @@ namespace TrameUnitTest
         {
             var neck = root.DeepFind(JointType.NECK);
             Assert.Equal(JointType.NECK, neck.JointType);
-            Assert.Equal(3, neck.GetChildren().Count);
 
             var head = root.DeepFind(JointType.HEAD);
             Assert.Equal(JointType.HEAD, head.JointType);
-            Assert.Equal(0, head.GetChildren().Count);
             Assert.Equal(true, head.Valid);
-
-            var elbowLeft = root.DeepFind(JointType.ELBOW_LEFT);
-            Assert.Equal(JointType.ELBOW_LEFT, elbowLeft.JointType);
-            Assert.Equal(1, elbowLeft.GetChildren().Count);
-            Assert.Equal(true, elbowLeft.Valid);
 
             var kneeLeft = neck.DeepFind(JointType.KNEE_LEFT);
             Assert.Equal(JointType.UNSPECIFIED, kneeLeft.JointType);
-            Assert.Equal(0, kneeLeft.GetChildren().Count);
             Assert.Equal(false, kneeLeft.Valid);
         }
         

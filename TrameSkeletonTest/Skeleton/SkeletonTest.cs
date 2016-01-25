@@ -20,7 +20,7 @@ namespace TrameUnitTest
             Assert.Equal(head.Point, head2.Point);
             Assert.Equal(head, head2);
 
-            Assert.Equal(3, s.Root.GetChildren().Count);
+            Assert.Equal(17, s.Joints.Count);
         }
        
     }
