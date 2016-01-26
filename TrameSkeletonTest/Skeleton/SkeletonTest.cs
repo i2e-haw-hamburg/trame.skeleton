@@ -1,15 +1,16 @@
 ﻿using System;
+using NUnit.Framework;
 using Trame;
 using Trame.Implementation.Skeleton;
 using TrameSkeleton.Math;
-using Xunit;
 
 namespace TrameUnitTest
 {
+    [TestFixture]
     public class SkeletonTest
     {
             
-        [Fact]
+        [Test]
         public void TestUpdate()
         {
             var s = Creator.GetNewDefaultSkeleton<InMapSkeleton>();
@@ -17,10 +18,10 @@ namespace TrameUnitTest
             s.UpdateSkeleton(JointType.HEAD, head);
 
             var head2 = s.GetJoint(JointType.HEAD);
-            Assert.Equal(head.Point, head2.Point);
-            Assert.Equal(head, head2);
+            Assert.AreEqual(head.Point, head2.Point);
+            Assert.AreEqual(head, head2);
 
-            Assert.Equal(17, s.Joints.Count);
+            Assert.AreEqual(17, s.Joints.Count);
         }
        
     }
