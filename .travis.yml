@@ -2,11 +2,11 @@
 mono:
   - alpha
 env: VERSION=0.3.2
-solution: Trame.Skeleton.sln
+solution: TrameSkeleton.sln
 install:
-  - nuget restore Trame.Skeleton.sln
+  - nuget restore TrameSkeleton.sln
 script:
-  - xbuild /p:Configuration=Release Trame.Skeleton.sln
+  - xbuild /p:Configuration=Release TrameSkeleton.sln
   - mono ./packages/xunit.runner.console.2.1.0/tools/xunit.console.exe  ./TrameSkeletonTest/bin/Release/TrameSkeletonTest.dll -noshadow
 deploy:
   provider: script
