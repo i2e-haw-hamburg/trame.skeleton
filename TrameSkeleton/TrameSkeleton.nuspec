@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>i2e.trame.skeleton</id>
-    <version>$version$</version>>
+    <version>0.3.2</version>>
     <title>Trame Skeleton</title>
     <authors>Christian Blank</authors>
     <owners>Christian Blank</owners>
