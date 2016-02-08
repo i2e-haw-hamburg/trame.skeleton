@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Text;
+using TrameSkeleton.Interface;
 
 namespace Trame
 {
@@ -17,27 +19,32 @@ namespace Trame
         /// <param name="jt">Jt.</param>
         /// <param name="j">J.</param>
         void UpdateSkeleton(JointType jt, IJoint j);
+
         /// <summary>
         /// Gets the joint.
         /// </summary>
         /// <returns>The joint.</returns>
         /// <param name="jt">Jt.</param>
         IJoint GetJoint(JointType jt);
+
         /// <summary>
         /// Gets or sets the root.
         /// </summary>
         /// <value>The root.</value>
         IJoint Root { get; set; }
+
         /// <summary>
         /// Gets the timestamp.
         /// </summary>
         /// <value>The timestamp.</value>
         UInt32 Timestamp { get; }
+
         /// <summary>
         /// Gets the I.
         /// </summary>
         /// <value>The I.</value>
         UInt32 ID { get; set; }
+
         /// <summary>
         /// Gets or sets a value indicating whether this <see cref="Trame.ISkeleton"/> is valid.
         /// </summary>
@@ -48,15 +55,24 @@ namespace Trame
         /// </summary>
         /// <returns>The arms.</returns>
         ISkeleton GetArms();
+
         /// <summary>
         /// Clone this instance.
         /// </summary>
         ISkeleton Clone();
+
         /// <summary>
         /// Gets the head.
         /// </summary>
         /// <returns>The head.</returns>
         IJoint GetHead();
-        IList<IJoint> Joints { get; } 
+
+        /// <summary>
+        /// Returns a hand representation if according to the type parameter, if it is currently tracked. Else null.
+        /// </summary>
+        /// <returns></returns>
+        IHand GetHand(HandType type, bool preferRight = true);
+
+        IList<IJoint> Joints { get; }
     }
 }
