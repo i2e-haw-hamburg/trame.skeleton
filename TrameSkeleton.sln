@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{17A0EE12-4A36-4AB8-8AB0-679924B7AC53}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		TrameSkeleton\TrameSkeleton.nuspec = TrameSkeleton\TrameSkeleton.nuspec
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrameSkeletonTest", "TrameSkeletonTest\TrameSkeletonTest.csproj", "{EEF97A15-F404-422D-86F9-441EF864DE89}"

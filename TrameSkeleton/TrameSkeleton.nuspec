@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0"?>
 <package >
-  <metadata><id>i2e.trame.skeleton</id><version>0.4.0</version><title>Trame Skeleton</title><authors>Christian Blank</authors><owners>Christian Blank</owners><licenseUrl>https://github.com/i2e-haw-hamburg/trame.skeleton</licenseUrl><projectUrl>https://github.com/i2e-haw-hamburg/trame.skeleton</projectUrl><requireLicenseAcceptance>false</requireLicenseAcceptance><description>Basic skeleton for abstraction</description><copyright>Copyright 2016</copyright><tags>Trame Skeleton Abstraction</tags></metadata>
+  <metadata><id>i2e.trame.skeleton</id><version>0.5.0</version><title>Trame Skeleton</title><authors>Christian Blank</authors><owners>Christian Blank</owners><licenseUrl>https://github.com/i2e-haw-hamburg/trame.skeleton</licenseUrl><projectUrl>https://github.com/i2e-haw-hamburg/trame.skeleton</projectUrl><requireLicenseAcceptance>false</requireLicenseAcceptance><description>Basic skeleton for abstraction</description><copyright>Copyright 2016</copyright><tags>Trame Skeleton Abstraction</tags></metadata>
   <files><file src="bin/Release/TrameSkeleton.dll" target="lib\net35\"/></files>
 </package>
