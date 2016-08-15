@@ -5,7 +5,7 @@ namespace Trame.Interface
     /// <summary>
     /// I device.
     /// </summary>
-    interface IDevice
+    public interface IDevice
     {
         /// <summary>
         /// Gets the skeleton.

@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using TrameSkeleton.Math;
+using Trame.Interface;
+using Trame.Math;
 
 
-namespace Trame.Implementation.Skeleton
+namespace Trame.Implementation
 {
     /// <summary>
     /// Oriented joint.
@@ -19,12 +20,12 @@ namespace Trame.Implementation.Skeleton
         JointType type;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Trame.Implementation.Skeleton.OrientedJoint"/> class.
+        /// Initializes a new instance of the <see cref="OrientedJoint"/> class.
         /// </summary>
         public OrientedJoint() : this(JointType.UNSPECIFIED, false)
         {}
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Trame.Implementation.Skeleton.OrientedJoint"/> class.
+		/// Initializes a new instance of the <see cref="OrientedJoint"/> class.
 		/// </summary>
 		/// <param name="type">Type.</param>
 		/// <param name="valid">If set to <c>true</c> valid.</param>
@@ -146,9 +147,9 @@ namespace Trame.Implementation.Skeleton
                 && orientation.Equals(o.Orientation) && point.Equals(o.Point);
         }
 		/// <summary>
-		/// Returns a <see cref="System.String"/> that represents the current <see cref="Trame.Implementation.Skeleton.OrientedJoint"/>.
+		/// Returns a <see cref="System.String"/> that represents the current <see cref="OrientedJoint"/>.
 		/// </summary>
-		/// <returns>A <see cref="System.String"/> that represents the current <see cref="Trame.Implementation.Skeleton.OrientedJoint"/>.</returns>
+		/// <returns>A <see cref="System.String"/> that represents the current <see cref="OrientedJoint"/>.</returns>
         public override string ToString()
         {
             return string.Format("type:{0}, valid:{1}, point:{2}, children:[ {3} ]", type, isValid, point, string.Join(",", children.Select(x => x.ToString()).ToArray()));

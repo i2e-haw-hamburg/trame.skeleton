@@ -27,11 +27,10 @@ SOFTWARE.
 
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Diagnostics;
 using System.Text;
 
-namespace TrameSkeleton.Math
+namespace Trame.Math
 {
     [Serializable]
     public struct Vector3 : IEquatable<Vector3>

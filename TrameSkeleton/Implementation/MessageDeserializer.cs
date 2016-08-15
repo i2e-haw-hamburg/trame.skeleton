@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Trame;
-using Trame.Implementation.Skeleton;
-
-namespace TrameSkeleton.Implementation
+﻿namespace Trame.Implementation
 {
     public class MessageDeserializer<K, T, SM, JM> where T : new() where K : new()
     {

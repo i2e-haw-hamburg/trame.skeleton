@@ -25,11 +25,7 @@ SOFTWARE.
 */
 #endregion License
 
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TrameSkeleton.Math
+namespace Trame.Math
 {
     public static class MathHelper
     {

@@ -27,7 +27,7 @@ SOFTWARE.
 
 using System;
 
-namespace TrameSkeleton.Math
+namespace Trame.Math
 
 {
     public struct Matrix : IEquatable<Matrix>

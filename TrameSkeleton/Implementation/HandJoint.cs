@@ -1,8 +1,6 @@
-﻿using Trame;
-using Trame.Implementation.Skeleton;
-using TrameSkeleton.Interface;
+﻿using Trame.Interface;
 
-namespace TrameSkeleton.Implementation
+namespace Trame.Implementation
 {
     public class HandJoint : OrientedJoint, IHand
     {

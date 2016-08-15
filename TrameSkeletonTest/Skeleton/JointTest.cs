@@ -1,8 +1,9 @@
-﻿using Trame;
-using Trame.Implementation.Skeleton;
-using NUnit.Framework;
+﻿using NUnit.Framework;
+using Trame;
+using Trame.Implementation;
+using Trame.Interface;
 
-namespace TrameUnitTest
+namespace TrameSkeletonTest.Skeleton
 {
     [TestFixture]
     public class JointTest

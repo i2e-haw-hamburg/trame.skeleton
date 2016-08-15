@@ -1,10 +1,10 @@
-﻿using System;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using Trame;
-using Trame.Implementation.Skeleton;
-using TrameSkeleton.Math;
+using Trame.Implementation;
+using Trame.Interface;
+using Trame.Math;
 
-namespace TrameUnitTest
+namespace TrameSkeletonTest.Skeleton
 {
     [TestFixture]
     public class SkeletonTest

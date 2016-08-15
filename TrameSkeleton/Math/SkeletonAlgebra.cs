@@ -1,8 +1,7 @@
-﻿using Trame;
-using Trame.Implementation.Skeleton;
-using TrameSkeleton.Implementation;
+﻿using Trame.Implementation;
+using Trame.Interface;
 
-namespace TrameSkeleton.Math
+namespace Trame.Math
 {
     /// <summary>
     /// 

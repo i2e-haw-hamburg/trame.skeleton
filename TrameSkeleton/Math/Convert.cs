@@ -1,5 +1,5 @@
 ﻿
-namespace TrameSkeleton.Math
+namespace Trame.Math
 {
     /// <summary>
     /// 

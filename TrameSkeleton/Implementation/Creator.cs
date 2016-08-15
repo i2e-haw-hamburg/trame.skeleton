@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Trame.Interface;
 
-namespace Trame.Implementation.Skeleton
+namespace Trame.Implementation
 {
 	/// <summary>
 	/// Creator.
@@ -31,9 +32,8 @@ namespace Trame.Implementation.Skeleton
 		/// <returns>The new invalid skeleton.</returns>
         public static ISkeleton GetNewInvalidSkeleton()
         {
-            var s = new Skeleton();
-            s.Valid = false;
-            return s;
+		    var s = new Skeleton {Valid = false};
+		    return s;
         }
 		/// <summary>
 		/// Creates the parent.

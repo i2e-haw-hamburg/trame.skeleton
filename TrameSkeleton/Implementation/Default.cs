@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using TrameSkeleton.Implementation;
-using TrameSkeleton.Interface;
-using TrameSkeleton.Math;
+﻿using System.Collections.Generic;
+using Trame.Interface;
+using Trame.Math;
 using Convert = System.Convert;
 
-namespace Trame.Implementation.Skeleton
+namespace Trame.Implementation
 {
 	/// <summary>
 	/// Default.

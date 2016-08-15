@@ -1,4 +1,4 @@
-﻿namespace TrameSkeleton.Interface
+﻿namespace Trame.Interface
 {
     /// <summary>
     /// Determines, which hand is meant.

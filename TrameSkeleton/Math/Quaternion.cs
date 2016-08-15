@@ -26,11 +26,12 @@ SOFTWARE.
 #endregion License
 
 using System;
+
 #if WINRT
 using System.Runtime.Serialization;
 #endif
 
-namespace TrameSkeleton.Math
+namespace Trame.Math
 {
 #if WINRT
     [DataContract]

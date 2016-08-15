@@ -29,7 +29,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace TrameSkeleton.Math
+namespace Trame.Math
 {
     [Serializable]
     public struct Vector4 : IEquatable<Vector4>

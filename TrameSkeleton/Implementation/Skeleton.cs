@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using TrameSkeleton.Interface;
+using Trame.Interface;
 
 
-namespace Trame.Implementation.Skeleton
+namespace Trame.Implementation
 {
     [Serializable]
-    public class Skeleton : ISkeleton
+    class Skeleton : ISkeleton
     {
         IJoint root;
         bool valid;
         uint id;
         uint timestamp;
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Trame.Implementation.Skeleton.Skeleton"/> class.
+		/// Initializes a new instance of the <see cref="Skeleton"/> class.
 		/// </summary>
         public Skeleton()
             : this(0, false, (uint)(DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond))
@@ -22,7 +22,7 @@ namespace Trame.Implementation.Skeleton
         }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Trame.Implementation.Skeleton.Skeleton"/> class.
+		/// Initializes a new instance of the <see cref="Skeleton"/> class.
 		/// </summary>
 		/// <param name="id">Identifier.</param>
 		/// <param name="valid">If set to <c>true</c> valid.</param>
@@ -44,19 +44,19 @@ namespace Trame.Implementation.Skeleton
             return root.DeepFind(jt);
         }
 		/// <summary>
-		/// Determines whether the specified <see cref="Trame.ISkeleton"/> is equal to the current <see cref="Trame.Implementation.Skeleton.Skeleton"/>.
+		/// Determines whether the specified <see cref="ISkeleton"/> is equal to the current <see cref="Skeleton"/>.
 		/// </summary>
-		/// <param name="other">The <see cref="Trame.ISkeleton"/> to compare with the current <see cref="Trame.Implementation.Skeleton.Skeleton"/>.</param>
-		/// <returns><c>true</c> if the specified <see cref="Trame.ISkeleton"/> is equal to the current
-		/// <see cref="Trame.Implementation.Skeleton.Skeleton"/>; otherwise, <c>false</c>.</returns>
+		/// <param name="other">The <see cref="ISkeleton"/> to compare with the current <see cref="Skeleton"/>.</param>
+		/// <returns><c>true</c> if the specified <see cref="ISkeleton"/> is equal to the current
+		/// <see cref="Skeleton"/>; otherwise, <c>false</c>.</returns>
         public bool Equals(ISkeleton other)
         {
             return valid == other.Valid && root.Equals(other.Root);
         }
 		/// <summary>
-		/// Returns a <see cref="System.String"/> that represents the current <see cref="Trame.Implementation.Skeleton.Skeleton"/>.
+		/// Returns a <see cref="System.String"/> that represents the current <see cref="Skeleton"/>.
 		/// </summary>
-		/// <returns>A <see cref="System.String"/> that represents the current <see cref="Trame.Implementation.Skeleton.Skeleton"/>.</returns>
+		/// <returns>A <see cref="System.String"/> that represents the current <see cref="Skeleton"/>.</returns>
         public override string ToString()
         {
             return string.Format("id:{0}, valid:{1}, timestamp:{2}, root:{3}", id, valid, timestamp, root);

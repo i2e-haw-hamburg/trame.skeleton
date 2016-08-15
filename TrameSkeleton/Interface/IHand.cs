@@ -1,4 +1,4 @@
-namespace Trame
+namespace Trame.Interface
 {
     public interface IHand : IJoint
     {

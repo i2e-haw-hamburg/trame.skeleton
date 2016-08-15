@@ -26,11 +26,10 @@ SOFTWARE.
 #endregion License
 
 using System;
-using System.Text;
-//using System.Drawing;
 using System.Globalization;
+//using System.Drawing;
 
-namespace TrameSkeleton.Math
+namespace Trame.Math
 {
     [Serializable]
     public struct Vector2 : IEquatable<Vector2>

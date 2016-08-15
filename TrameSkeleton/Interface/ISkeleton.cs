@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.IO;
-using System.Linq;
-using System.Text;
-using TrameSkeleton.Interface;
 
-namespace Trame
+namespace Trame.Interface
 {
     /// <summary>
     /// I skeleton.
@@ -46,7 +41,7 @@ namespace Trame
         UInt32 ID { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether this <see cref="Trame.ISkeleton"/> is valid.
+        /// Gets or sets a value indicating whether this <see cref="ISkeleton"/> is valid.
         /// </summary>
         /// <value><c>true</c> if valid; otherwise, <c>false</c>.</value>
         bool Valid { get; set; }

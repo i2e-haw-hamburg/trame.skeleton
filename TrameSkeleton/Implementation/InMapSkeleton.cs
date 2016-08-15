@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices;
-using TrameSkeleton.Interface;
+using Trame.Interface;
 
-
-namespace Trame.Implementation.Skeleton
+namespace Trame.Implementation
 {
     [Serializable]
     public class InMapSkeleton : ISkeleton
@@ -55,10 +53,10 @@ namespace Trame.Implementation.Skeleton
             return _joints[jt];
         }
 		/// <summary>
-		/// Determines whether the specified <see cref="Trame.ISkeleton"/> is equal to the current <see cref="Trame.Implementation.Skeleton.Skeleton"/>.
+		/// Determines whether the specified <see cref="ISkeleton"/> is equal to the current <see cref="Trame.Implementation.Skeleton.Skeleton"/>.
 		/// </summary>
-		/// <param name="other">The <see cref="Trame.ISkeleton"/> to compare with the current <see cref="Trame.Implementation.Skeleton.Skeleton"/>.</param>
-		/// <returns><c>true</c> if the specified <see cref="Trame.ISkeleton"/> is equal to the current
+		/// <param name="other">The <see cref="ISkeleton"/> to compare with the current <see cref="Trame.Implementation.Skeleton.Skeleton"/>.</param>
+		/// <returns><c>true</c> if the specified <see cref="ISkeleton"/> is equal to the current
 		/// <see cref="Trame.Implementation.Skeleton.Skeleton"/>; otherwise, <c>false</c>.</returns>
         public bool Equals(ISkeleton other)
         {

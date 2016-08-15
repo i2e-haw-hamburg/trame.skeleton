@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TrameSkeleton.Math;
+using Trame.Math;
 
-namespace Trame
+namespace Trame.Interface
 {
     /// <summary>
     /// I joint.
@@ -34,7 +32,7 @@ namespace Trame
         /// <value>The type of the joint.</value>
         JointType JointType { get; set; }
         /// <summary>
-        /// Gets or sets a value indicating whether this <see cref="Trame.IJoint"/> is valid.
+        /// Gets or sets a value indicating whether this <see cref="IJoint"/> is valid.
         /// </summary>
         /// <value><c>true</c> if valid; otherwise, <c>false</c>.</value>
         bool Valid { get; set; }
